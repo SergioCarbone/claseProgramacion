@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1490307515 source:d:\carbone\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mis funciones.h"
+
+1490228440 source:d:\carbone\mis funciones.c
+
+1490227734 d:\carbone\mis funciones.h
+
+1490228442 source:d:\carbone\misfunciones.c
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1490316222 source:d:\carbone\biblioteca\biblioteca.c
+
+1490316431 source:d:\carbone\biblioteca\main.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
+1490316222 d:\carbone\biblioteca\biblioteca.h
+
