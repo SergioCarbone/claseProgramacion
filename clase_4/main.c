@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../misFunciones.h"
+
 
 int main()
 {
-    printf("hola");
+    printf("Hello world!\n");
     return 0;
 }
+
