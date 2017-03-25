@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1490481985 source:c:\users\sergio\documents\github\claseprogramacion\clase_sabado25\practicasabado\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
