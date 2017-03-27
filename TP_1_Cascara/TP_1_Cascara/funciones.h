@@ -36,14 +36,7 @@ float dividir ( float a, float b)
 {
     float total;
 
-    if(b == 0)
-    {
-        return 0;
-    }
-    else
-    {
-        total = a / b;
-    }
+    total = a / b;
     return total;
 }
 

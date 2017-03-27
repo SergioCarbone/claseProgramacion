@@ -45,9 +45,18 @@ int main()
             printf("El resultado de la resta entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoRes);
             break;
         case 3:
-            resultadoDiv = dividir(valorA, valorB);
-            printf("El resultado de la division entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoDiv);
-            break;
+            if(valorB == 0)
+            {
+                printf("No se puede dividir entre 0\n");
+                break;
+            }
+            else
+            {
+                resultadoDiv = dividir(valorA, valorB);
+                printf("El resultado de la division entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoDiv);
+                break;
+            }
+
         case 4:
             resultadoMult = multiplicar(valorA, valorB);
             printf("El resultado de la multiplicacion entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoMult);
