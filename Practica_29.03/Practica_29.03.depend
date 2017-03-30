@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1490834946 source:d:\claseprogramacion\practica_29.03\practica_29.03.c
+
+1490835283 source:d:\claseprogramacion\practica_29.03\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Practica_29.03.h"
+
+1490835358 d:\claseprogramacion\practica_29.03\practica_29.03.h
+

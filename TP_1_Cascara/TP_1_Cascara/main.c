@@ -13,7 +13,7 @@ int main()
     {
         printf("Ingrese el valor A: ");
         scanf("%f", &valorA);
-
+resultadoSum
         printf("Ingrese el valor B: ");
         scanf("%f", &valorB);
 
