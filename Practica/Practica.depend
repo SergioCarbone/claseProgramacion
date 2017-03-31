@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1490782444 source:c:\users\sergio\documents\github\claseprogramacion\clase_sabado25\practica\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1490869923 source:c:\users\sergio\documents\github\claseprogramacion\practica\main.c
+	<stdio.h>
+	<stdlib.h>
+

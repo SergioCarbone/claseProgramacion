@@ -20,9 +20,17 @@ int main()
     switch (operaciones)
     {
         case 1:
-            resultadoDiv = dividir(valorA, valorB);
-            printf("El resultado de la division entre %.2f y %.2f es: %.2f",valorA, valorB, resultadoDiv);
-            break;
+            if(valorB == 0)
+            {
+                printf("No se puede dividir entre 0\n");
+                break;
+            }
+            else
+            {
+                resultadoDiv = dividir(valorA, valorB);
+                printf("El resultado de la division entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoDiv);
+                break;
+            }
 
         case 2:
             resultadoSum = suma(valorA, valorB);
