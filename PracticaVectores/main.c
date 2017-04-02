@@ -8,16 +8,19 @@
 int main()
 {
     int i;
-    int indice = 5;
-    int num[MAX]= {55,60,3,94,16,47};
+    int num[MAX]= {60,55,3,94,16,47};
+    int cantidad = 6;
 
-    int ordenarVector (num, cantidad);
 
-    for (i = 0; i < indice; i++)
+    ordenarVector (num, cantidad);
+
+
+    for (i = 0; i < cantidad; i++)
     {
-        printf("\n %d", num[MAX]);
+        printf("\n %d", num[i]);
     }
 
 
     return 0;
 }
+
