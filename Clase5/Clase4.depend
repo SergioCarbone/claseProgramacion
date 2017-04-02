@@ -14,3 +14,14 @@
 
 1490919685 d:\clase4\func.h
 
+1491068580 source:c:\claseprogramacion\clase5\func.c
+	<stdio.h>
+	<stdlib.h>
+
+1491068580 source:c:\claseprogramacion\clase5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1491068580 c:\claseprogramacion\clase5\func.h
+

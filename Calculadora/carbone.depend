@@ -28,3 +28,10 @@
 
 1490540840 source:c:\users\sergio\documents\github\claseprogramacion\calculadora\misfunciones.c
 
+1491068580 source:c:\claseprogramacion\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"misFunciones.h"
+
+1491155000 c:\claseprogramacion\calculadora\misfunciones.h
+

@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1491140642 source:c:\claseprogramacion\practicavectores\funciones.c
+1491163578 source:c:\claseprogramacion\practicavectores\funciones.c
 	<stdio.h>
 	<stdlib.h>
 
-1491140657 source:c:\claseprogramacion\practicavectores\main.c
+1491160651 source:c:\claseprogramacion\practicavectores\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1491140642 c:\claseprogramacion\practicavectores\funciones.h
+1491160623 c:\claseprogramacion\practicavectores\funciones.h
 

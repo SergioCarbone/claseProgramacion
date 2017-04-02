@@ -39,7 +39,30 @@ void nadiaSort(int array[], int size,int arrayOrdenado[])
     }
 }
 
+int ordenarVector (int num[], int cantidad)
 
+{
+    int aux1 = num[cantidad];
+    int aux2 = num[cantidad + 1];
+    int indice = num[indice];
+
+    for ( ; indice < cantidad ; indice++)
+    {
+        if (aux2 < aux1)
+        {
+            aux1 = aux2;
+
+            aux2 = num[cantidad +1];
+
+        }
+        else
+        {
+            aux1 = num[cantidad+1];
+            aux2 = num[cantidad+1];
+        }
+    }
+    return 0;
+}
 
 float promedio(int edad[], int cantidad){
 

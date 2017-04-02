@@ -4,25 +4,11 @@
 
 int main()
 {
-    char texto[MAX];
-    int x;
-    printf("\nIngrese su clave: ");
-    gets(texto);  // Lee lo que se ingresa por teclado y lo guarda
-    //scanf("%s", texto);
-
-    x = strlen ( texto ); // strlen cuenta la cantidad de caracteres
-    if (strcmp (texto, "1234")== 0) // strcmp compara cadena de caracteres distingue mayusculas
-    {                               // stricmp compara cadena de caracteres NO distingue mayusculas
-        printf("\nClave correcta");
-        printf("\nLa clave tiene %d letras", x);
-    }
-    else
+    int i;
+    for (i = 0; i < 6; i++)
     {
-        printf("\nClave incorrecta");
-        printf("\nLa clave tiene %d letras", x);
+        printf("\n %d", i);
     }
-    main();
-
    return 0;
 }
 
@@ -52,4 +38,25 @@ int edad[MAX], i;
    return 0;
 }
 
+*/
+
+/*
+ char texto[MAX];
+    int x;
+    printf("\nIngrese su clave: ");
+    gets(texto);  // Lee lo que se ingresa por teclado y lo guarda
+    //scanf("%s", texto);
+
+    x = strlen ( texto ); // strlen cuenta la cantidad de caracteres
+    if (strcmp (texto, "1234")== 0) // strcmp compara cadena de caracteres distingue mayusculas
+    {                               // stricmp compara cadena de caracteres NO distingue mayusculas
+        printf("\nClave correcta");
+        printf("\nLa clave tiene %d letras", x);
+    }
+    else
+    {
+        printf("\nClave incorrecta");
+        printf("\nLa clave tiene %d letras", x);
+    }
+    main();
 */
