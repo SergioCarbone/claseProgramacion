@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
+#include "validaciones.h"
 
 int main()
 {
     float valorA, valorB, resultadoDiv, resultadoSum, resultadoRes, resultadoMult;
-    int opcion = 0, enteroA, respuestaA, flagA = 0, flagB = 0;
+    int opcion = 0, respuestaA, flagA = 0, flagB = 0;
     char seguir='s';
 
     do
@@ -36,14 +37,14 @@ int main()
             flagB = 1;
             break;
         case 3:
-            if ( flagA == 0)
+            if (validarNumero(flagA)==0)
             {
                 printf("Falta ingresar el primer operando, por favor reingrese: ");
                 scanf("%f", &valorA);
                 flagA = 1;
                 break;
             }
-            else if ( flagB == 0)
+            else if (validarNumero(flagB == 0))
             {
                 printf("Falta ingresar el segundo operando, por favor reingrese: ");
                 scanf("%f", &valorB);
@@ -58,14 +59,14 @@ int main()
             }
 
         case 4:
-            if ( flagA == 0)
+            if (validarNumero(flagA)==0)
             {
                 printf("Falta ingresar el primer operando, por favor reingrese: ");
                 scanf("%f", &valorA);
                 flagA = 1;
                 break;
             }
-            else if ( flagB == 0)
+            else if (validarNumero(flagB == 0))
             {
                 printf("Falta ingresar el segundo operando, por favor reingrese: ");
                 scanf("%f", &valorB);
@@ -124,8 +125,8 @@ int main()
             }
             else
             {
-                resultadoSum = suma(valorA, valorB);
-                printf("El resultado de la suma entre %.2f y %.2f es : %.2f \n",valorA, valorB, resultadoSum);
+                resultadoMult = multiplicar(valorA, valorB);
+                printf("El resultado de la multiplicacion entre %.2f y %.2f es : %.2f \n",valorA, valorB, resultadoMult);
                 break;
             }
         case 7:
@@ -138,11 +139,19 @@ int main()
             }
             else
             {
-                enteroA = (int) valorA;
-
-                respuestaA = factorial(enteroA);
-                printf("El factorial de %d es: %d \n", enteroA, respuestaA);
+                if (validacionFactorial(valorA)==1)
+                {
+                respuestaA = factorial(valorA);
+                printf("El factorial de %.0f es: %d \n", valorA, respuestaA);
                 break;
+
+                }
+                else
+                {
+                    printf("Error, introduzca un valor entero superior o igual a 0 ");
+                    break;
+                }
+
             }
         case 8:
             if ( flagA == 0)
@@ -180,11 +189,18 @@ int main()
                 resultadoMult = multiplicar(valorA, valorB);
                 printf("El resultado de la multiplicacion entre %.2f y %.2f es: %.2f\n",valorA, valorB, resultadoMult);
 
-                enteroA = (int) valorA;
-
-                respuestaA = factorial(enteroA);
-                printf("El factorial de %d es: %d \n", enteroA, respuestaA);
+                if (validacionFactorial(valorA)==1)
+                {
+                respuestaA = factorial(valorA);
+                printf("El factorial de %0.f es: %d \n", valorA, respuestaA);
                 break;
+
+                }
+                else
+                {
+                    printf("Error, introduzca un valor entero superior o igual a 0 ");
+                    break;
+                }
             }
         case 9:
             seguir = 'n';
