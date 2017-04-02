@@ -11,8 +11,7 @@ int main()
     int indice = 5;
     int num[MAX]= {55,60,3,94,16,47};
 
-    int ordenarVector (MAX);
-
+    int ordenarVector (num, cantidad);
 
     for (i = 0; i < indice; i++)
     {
