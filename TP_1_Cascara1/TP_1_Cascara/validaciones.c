@@ -17,17 +17,5 @@ int validacionFactorial (float numero)
         }
     }
 }
-int validarNumero (int flag)
-{
 
-    if ( flag== 1)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
-
-}
 
