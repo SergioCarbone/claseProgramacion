@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1492387230 source:c:\users\sergio\documents\github\funciones\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1492396097 source:c:\users\sergio\documents\github\clase1_pc\ejercicioclase7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../Funciones/funciones.h"
+
+1492387230 c:\users\sergio\documents\github\funciones\funciones.h
+

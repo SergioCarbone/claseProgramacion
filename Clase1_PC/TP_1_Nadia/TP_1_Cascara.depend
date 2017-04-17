@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1491222920 source:c:\users\nderenzis\documents\laboratorio1\facu\tp_1\funciones.c
+
+1491224600 source:c:\users\nderenzis\documents\laboratorio1\facu\tp_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"Validaciones.h"
+
+1491222920 c:\users\nderenzis\documents\laboratorio1\facu\tp_1\funciones.h
+
+1491183816 source:c:\users\nderenzis\documents\laboratorio1\facu\tp_1\validaciones.c
+
+1491184721 c:\users\nderenzis\documents\laboratorio1\facu\tp_1\validaciones.h
+
+1491222922 source:f:\tp_1_nadia\funciones.c
+
+1491224602 source:f:\tp_1_nadia\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"Validaciones.h"
+
+1491222922 f:\tp_1_nadia\funciones.h
+
+1491184722 f:\tp_1_nadia\validaciones.h
+
+1491183818 source:f:\tp_1_nadia\validaciones.c
+
