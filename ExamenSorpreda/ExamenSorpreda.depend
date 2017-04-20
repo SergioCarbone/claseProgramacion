@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1492643244 source:d:\claseprogramacion\examensorpreda\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
