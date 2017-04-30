@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1493490349 source:d:\claseprogramacion\practicaexamen\carga_edicion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+
+1493489542 d:\claseprogramacion\practicaexamen\carga_edicion.h
+
+1493479338 d:\claseprogramacion\practicaexamen\validaciones.h
+
+1493480909 source:d:\claseprogramacion\practicaexamen\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+
+1493486972 source:d:\claseprogramacion\practicaexamen\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+

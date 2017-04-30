@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1493480880 source:d:\claseprogramacion\bibliotecas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+
+1493480170 source:d:\claseprogramacion\bibliotecas\carga_edicion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+
+1493479338 source:d:\claseprogramacion\bibliotecas\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+
+1493480170 d:\claseprogramacion\bibliotecas\carga_edicion.h
+
+1493479338 d:\claseprogramacion\bibliotecas\validaciones.h
+
