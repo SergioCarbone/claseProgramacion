@@ -29,3 +29,33 @@
 	"carga_edicion.h"
 	"validaciones.h"
 
+1493573098 source:c:\users\sergio\documents\github\claseprogramacion\practicaexamen\carga_edicion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+
+1493573099 c:\users\sergio\documents\github\claseprogramacion\practicaexamen\carga_edicion.h
+
+1493573157 c:\users\sergio\documents\github\claseprogramacion\practicaexamen\validaciones.h
+
+1493574469 source:c:\users\sergio\documents\github\claseprogramacion\practicaexamen\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+
+1493575128 source:c:\users\sergio\documents\github\claseprogramacion\practicaexamen\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	"carga_edicion.h"
+	"validaciones.h"
+

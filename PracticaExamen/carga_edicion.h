@@ -11,8 +11,11 @@ typedef struct
 
 typedef struct
 {
-
-
+    char mensaje[150];
+    int id;
+    int meGusta;
+    int idUsuario;
+    int isEmpty;
 
 } EComentario;
 
@@ -32,4 +35,9 @@ int buscarPorNick(EPersona listaUsuarios[], char valor[],int cantidad);
 int buscarPosicion(EPersona persona[], int cantidad, int valor);
 void iniciarEstado(EPersona persona[],int cantidad,int valor);
 void ordenarPorNombre(EPersona persona[],int cantidad);
+int buscarPorClave(EPersona listaUsuarios[], char valor[],int cantidad);
+int buscarPorEmail(EPersona listaUsuarios[], char valor[],int cantidad);
+void iniciarMeGusta(EComentario listaComentarios[],int cantidad,int valor);
+void iniciarComentario(EComentario listaComentarios[],int cantidad,int valor);
+int buscarPosicionDeComentario(EComentario listaComentarios[], int cantidad, int valor);
 

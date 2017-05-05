@@ -4,3 +4,7 @@ int Alfanumerico(char str[]);
 int Numerico(char str[] );
 void rangoEdad (char input[]);
 int getStringDni(char mensaje[], char auxiliar[]);
+int getStringMail(char mensaje[], char auxiliar[]);
+int getStringNick(char mensaje[], char auxiliar[]);
+int getStringClave(char mensaje[], char auxiliar[]);
+int getStringMensaje(char mensaje[], char auxiliar[]);

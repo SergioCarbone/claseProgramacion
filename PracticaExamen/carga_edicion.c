@@ -120,6 +120,24 @@ int buscarPosicion(EPersona listaUsuario[], int cantidad, int valor)
     return -1;
 }
 
+/***************
+*
+*
+*
+*/
+int buscarPosicionDeComentario(EComentario listaComentarios[], int cantidad, int valor)
+{
+    int i;
+    for(i=0; i<cantidad; i++)
+    {
+        if (listaComentarios[i].isEmpty == valor)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
 
 /**
  * Obtiene el indice que coincide con el dni pasado por parametro.
@@ -156,6 +174,30 @@ void iniciarEstado(EPersona listaUsuarios[],int cantidad,int valor)
     }
 }
 
+/***************
+* Inicia el estado de cada una de las personas del array
+* @param persona recibe el array de persona
+* @param cantidad recibe la cantidad de posiciones
+* @param valor indica que valor va a recibir cada estado
+*/
+void iniciarComentario(EComentario listaComentarios[],int cantidad,int valor)
+{
+    int i;
+    for(i=0; i<cantidad; i++)
+    {
+        listaComentarios[i].isEmpty=valor;
+    }
+}
+
+void iniciarMeGusta(EComentario listaComentarios[],int cantidad,int valor)
+{
+    int i;
+    for(i=0; i<cantidad; i++)
+    {
+        listaComentarios[i].meGusta=valor;
+    }
+}
+
 void ordenarPorNombre(EPersona persona[],int cantidad)
 {
 
@@ -176,4 +218,48 @@ void ordenarPorNombre(EPersona persona[],int cantidad)
             }
         }
     }
+}
+
+
+
+
+/**
+ * Obtiene el indice que coincide con el dni pasado por parametro.
+ * @param lista el array se pasa como parametro.
+ * @param dni el dni a ser buscado en el array.
+ * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
+ */
+int buscarPorClave(EPersona listaUsuarios[], char valor[],int cantidad)
+{
+    int i, retorno = -1;
+    for(i=0; i<cantidad; i++)
+    {
+        if(strcmp(listaUsuarios[i].claveAcceso , valor)==0 && listaUsuarios[i].isEmpty == 0)
+        {
+            retorno = i;
+            break;
+        }
+    }
+    return retorno;
+}
+
+
+/**
+ * Obtiene el indice que coincide con el dni pasado por parametro.
+ * @param lista el array se pasa como parametro.
+ * @param dni el dni a ser buscado en el array.
+ * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
+ */
+int buscarPorEmail(EPersona listaUsuarios[], char valor[],int cantidad)
+{
+    int i, retorno = -1;
+    for(i=0; i<cantidad; i++)
+    {
+        if(strcmp(listaUsuarios[i].email , valor)==0 && listaUsuarios[i].isEmpty == 0)
+        {
+            retorno = i;
+            break;
+        }
+    }
+    return retorno;
 }

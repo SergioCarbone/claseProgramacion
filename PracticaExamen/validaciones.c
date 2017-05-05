@@ -63,6 +63,38 @@ int Telefono(char str[])
 *
 *
 */
+int mail(char str[])
+{
+    int i = 0;
+    int contador = 0;
+
+    while(str[i] != '\0')
+    {
+        if((str[i] < '0' || str[i] > '9') && (str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z') && (str[i] != '-') && (str[i] != '@') && (str[i] != '_') && (str[i] != '.'))
+        {
+            return 0;
+        }
+        if(str[i] == '@')
+            {
+                contador++;
+            }
+        i++;
+    }
+    if(contador == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+/***************
+*
+*
+*
+*/
 int Alfanumerico(char str[])
 {
     int i = 0;
@@ -120,11 +152,67 @@ void rangoEdad (char input[])
 * @param auxiliar texto que debe validar
 * @return retorna 1 si se cumple la condicion o 0 si no
 */
-int getStringDni(char mensaje[], char auxiliar[])
+int getStringClave(char mensaje[], char auxiliar[])
 {
     char aux[10];
     getString(mensaje, aux);
-    if(Numerico(aux)&& strlen(aux)== 8)
+    if(Alfanumerico(aux)&& strlen(aux)<= 8)
+    {
+        strcpy(auxiliar, aux);
+        return 1;
+    }
+    return 0;
+}
+
+
+/***************
+* Controla que solo se hayan ingresado numeros
+* @param mensaje para imprimir
+* @param auxiliar texto que debe validar
+* @return retorna 1 si se cumple la condicion o 0 si no
+*/
+int getStringNick(char mensaje[], char auxiliar[])
+{
+    char aux[10];
+    getString(mensaje, aux);
+    if(Alfanumerico(aux)&& strlen(aux)<= 8)
+    {
+        strcpy(auxiliar, aux);
+        return 1;
+    }
+    return 0;
+}
+
+/***************
+* Controla que solo se hayan ingresado numeros
+* @param mensaje para imprimir
+* @param auxiliar texto que debe validar
+* @return retorna 1 si se cumple la condicion o 0 si no
+*/
+int getStringMensaje(char mensaje[], char auxiliar[])
+{
+    char aux[150];
+    getString(mensaje, aux);
+
+    if(Alfanumerico(aux)&& strlen(aux)<= 150)
+    {
+        strcpy(auxiliar, aux);
+        return 1;
+    }
+    return 0;
+}
+
+/***************
+* Recibe un mensaje y un texto
+* @param mensaje para imprimir
+* @param auxiliar texto que debe validar
+* @return retorna 1 si se cumple la condicion o 0 si no
+*/
+int getStringMail(char mensaje[], char auxiliar[])
+{
+    char aux[60];
+    getString(mensaje, aux);
+    if(mail(aux)&& strlen(aux)<= 30)
     {
         strcpy(auxiliar, aux);
         return 1;
