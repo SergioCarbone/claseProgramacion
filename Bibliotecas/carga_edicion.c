@@ -8,10 +8,10 @@
 
 
 /**
-* Devuelve el valor ingresado
-* @param mensaje que tiene que imprimir
-* @return valor ingresado por el usuario
-*/
+ * \brief Solicita un número al usuario y devuelve el resultado
+ * \param mensaje Es el mensaje a ser mostrado
+ * \return El número ingresado por el usuario
+ */
 int getInt(char mensaje[])
 {
     int auxiliar;
@@ -20,7 +20,7 @@ int getInt(char mensaje[])
     return auxiliar;
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------
 float getFloat(char mensaje[])
 {
     float auxiliar;
@@ -28,19 +28,19 @@ float getFloat(char mensaje[])
     scanf("%f", &auxiliar);
     return auxiliar;
 }
-
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
 char getChar(char mensaje[])
 {
     char auxiliar;
-    printf("%s", mensaje);
-    fflush(stdin);
-    scanf("%c", &auxiliar);
+    printf("%s",mensaje);
+    fflush(stdin); // Win
+    // fpurge(stdin); //Linux y OSx
+    scanf("%c",&auxiliar);
     return auxiliar;
-
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------
 /***************
 *
 *
@@ -52,26 +52,45 @@ char getNumeroAleatorio(int desde, int hasta, int iniciar)
         srand(time(NULL));
     return desde +(rand()% (hasta + 1 - desde));
 }
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
-/***************
-*
-*
-*
-*/
+/**
+ * \brief Solicita un texto al usuario y lo devuelve
+ * \param mensaje Es el mensaje a ser mostrado
+ * \param auxiliar donde se cargará el texto ingresado
+ */
 void getString(char mensaje[], char auxiliar[])
 {
     printf(mensaje);
     scanf("%s", auxiliar);
 }
 
-
-
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
 /**
-* Controla que solo se hayan ingresado letras
-* @param mensaje para imprimir
-* @param auxiliar texto que debe validar
-* @return retorna 1 si se cumple la condicion o 0 si no
+ * \brief Solicita un texto numérico al usuario y lo devuelve
+ * \param mensaje Es el mensaje a ser mostrado
+ * \param auxiliar donde se cargará el texto ingresado
+ * \return 1 si el texto contiene solo números
+ */
+int getNumerosChar (char mensaje[],char auxiliar[])
+{
+    int retorno=0;
+    getString(mensaje,auxiliar);
+    if(Numerico(auxiliar))
+    {
+        retorno= 1;
+    }
+    return retorno;
+}
+
+/*************************************************************************************************************************************************
+
+/**
+* \brief Solicita un texto al usuario y lo devuelve
+* \param mensaje Es el mensaje a ser mostrado
+* \param auxiliar donde se cargará el texto ingresado
+* \return 1 si el texto contiene solo letras
 */
 int getStringLetras(char mensaje[], char auxiliar[])
 {
@@ -84,6 +103,35 @@ int getStringLetras(char mensaje[], char auxiliar[])
     }
     return 0;
 }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+/**
+ * \brief Verifica si el valor recibido contiene solo letras
+ * \param str Array con la cadena a ser analizada
+ * \return 1 si contiene solo ' ' y letras y 0 si no lo es
+ *
+ */
+int ingresarSoloLetras (char auxiliar[], char mensajeParaPedirDato[],char mensajeError[])
+{
+    char seguir='s';
+    int cargaExitosa;
+    do
+    {
+        cargaExitosa=getStringLetras(mensajeParaPedirDato,auxiliar);
+        if(!(cargaExitosa))
+        {
+            printf(mensajeError);// Ejemplo "Ha ingresado caracteres invalidos para un nombre.\n"
+            seguir=getChar("Desea reintentar? s/n");
+        }
+    }
+    while(cargaExitosa!=1 && seguir == 's');
+    return cargaExitosa;
+}
+
+
+
+/*************************************************************************************************************************************************
 
 /***************
 *
@@ -101,78 +149,6 @@ int getStringNumeros(char mensaje[], char auxiliar[])
     }
     return 0;
 }
-
-/***************
-*
-*
-*
-*/
-int buscarPosicion(EPersona persona[], int cantidad, int valor)
-{
-    int i;
-    for(i=0; i<cantidad; i++)
-    {
-        if (persona[i].estado == valor)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
+/*************************************************************************************************************************************************
 
 
-/**
- * Obtiene el indice que coincide con el dni pasado por parametro.
- * @param lista el array se pasa como parametro.
- * @param dni el dni a ser buscado en el array.
- * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
- */
-int buscarPorDni(EPersona persona[], int dni,int cantidad)
-{
-    int i;
-    for(i=0; i<cantidad; i++)
-    {
-        if(persona[i].dni == dni)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
-
-/***************
-* Inicia el estado de cada una de las personas del array
-* @param persona recibe el array de persona
-* @param cantidad recibe la cantidad de posiciones
-* @param valor indica que valor va a recibir cada estado
-*/
-void iniciarEstado(EPersona persona[],int cantidad,int valor)
-{
-    int i;
-    for(i=0; i<cantidad; i++)
-    {
-        persona[i].estado=valor;
-    }
-}
-
-void ordenarPorNombre(EPersona persona[],int cantidad)
-{
-
-    int i,j;
-    EPersona nombre;
-
-
-    for(i=0; i< cantidad; i++)
-    {
-        for(j=i+1; j<cantidad; j++)
-        {
-            if(stricmp(persona[i].nombre,persona[j].nombre)>0)
-            {
-                nombre = persona[i];
-                persona[i] = persona[j];
-                persona[j] = nombre;
-
-            }
-        }
-    }
-}
