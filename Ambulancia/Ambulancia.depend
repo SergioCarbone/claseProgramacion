@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1506477228 source:e:\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506204632 e:\ambulancia\persona.h
+
+1506476740 e:\ambulancia\llamada.h
+
+1505862878 e:\ambulancia\validar.h
+
+1506469298 source:e:\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506199106 source:e:\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506204632 source:e:\ambulancia\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505906100 source:f:\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505905268 f:\ambulancia\persona.h
+
+1505905870 f:\ambulancia\llamada.h
+
+1505862878 f:\ambulancia\validar.h
+
+1505905518 source:f:\ambulancia\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505863360 source:f:\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
