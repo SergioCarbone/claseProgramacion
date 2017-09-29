@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1506638006 source:d:\claseprogramacion\plantilla\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	"Entidad1.h"
+
+1506638103 source:d:\claseprogramacion\plantilla\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Entidad1.h"
+	"Entidad2.h"
+
+1506638939 d:\claseprogramacion\plantilla\entidad1.h
+
+1506638939 d:\claseprogramacion\plantilla\entidad2.h
+
+1506638939 source:d:\claseprogramacion\plantilla\entidad2.c
+	<stdio.h>
+	<stdlib.h>
+	"Entidad2.h"
+
+1506199106 source:d:\claseprogramacion\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506204632 d:\claseprogramacion\ambulancia\persona.h
+
+1506476740 d:\claseprogramacion\ambulancia\llamada.h
+
+1505862878 d:\claseprogramacion\ambulancia\validar.h
+
