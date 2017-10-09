@@ -1,0 +1,227 @@
+# depslib dependency file v1.0
+1506812546 source:e:\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798560 e:\ambulancia\persona.h
+
+1506812670 e:\ambulancia\llamada.h
+
+1505862878 e:\ambulancia\validar.h
+
+1506811574 source:e:\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1506199106 source:e:\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798560 source:e:\ambulancia\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505906100 source:f:\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505905268 f:\ambulancia\persona.h
+
+1505905870 f:\ambulancia\llamada.h
+
+1505862878 f:\ambulancia\validar.h
+
+1505905518 source:f:\ambulancia\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1505863360 source:f:\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798774 source:e:\ambulancia\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798774 e:\ambulancia\informes.h
+
+1506798774 source:c:\users\sergio\desktop\ambulancia2\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506942882 c:\users\sergio\desktop\ambulancia2\persona.h
+
+1506903910 c:\users\sergio\desktop\ambulancia2\llamada.h
+
+1505862878 c:\users\sergio\desktop\ambulancia2\validar.h
+
+1506900041 source:c:\users\sergio\desktop\ambulancia2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1506798774 c:\users\sergio\desktop\ambulancia2\informes.h
+
+1506942893 source:c:\users\sergio\desktop\ambulancia2\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506199106 source:c:\users\sergio\desktop\ambulancia2\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506942266 source:c:\users\sergio\desktop\ambulancia2\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798774 source:e:\ambulancia2\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506942884 e:\ambulancia2\persona.h
+
+1506983942 e:\ambulancia2\llamada.h
+
+1505862878 e:\ambulancia2\validar.h
+
+1506988596 source:e:\ambulancia2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1506798774 e:\ambulancia2\informes.h
+
+1506990946 source:e:\ambulancia2\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506199106 source:e:\ambulancia2\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1507071988 source:e:\ambulancia2\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506798774 source:f:\ambulancia2\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1506942884 f:\ambulancia2\persona.h
+
+1507226282 f:\ambulancia2\llamada.h
+
+1507512992 f:\ambulancia2\validar.h
+
+1507232084 source:f:\ambulancia2\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1507226160 source:f:\ambulancia2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1506798774 f:\ambulancia2\informes.h
+
+1507233020 source:f:\ambulancia2\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+
+1507230920 source:f:\ambulancia2\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+	"llamada.h"
+	"validar.h"
+

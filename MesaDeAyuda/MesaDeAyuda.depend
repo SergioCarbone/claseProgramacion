@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1506995450 source:e:\mesadeayuda\abonado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1507076296 source:e:\mesadeayuda\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1507076622 source:e:\mesadeayuda\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1507027552 source:e:\mesadeayuda\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+	"informes.h"
+
+1506992310 e:\mesadeayuda\abonado.h
+
+1506997614 e:\mesadeayuda\llamada.h
+
+1506990648 e:\mesadeayuda\validar.h
+
+1506998118 e:\mesadeayuda\informes.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+
+1506990648 source:e:\mesadeayuda\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"validar.h"
+
